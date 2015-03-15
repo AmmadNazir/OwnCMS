@@ -18,6 +18,8 @@ class Admin extends Controller
         $this->page->title = "Welcome Note &mdash; ".SITE_NAME;
         // Main header.php in view/admin/header.php 
         $this->page->view('admin/header');
+        //Admin Navigation
+        $this->page->view('admin/nav');
         // Main index.php in view/admin/index.php 
         $this->page->view('admin/index');
     }
@@ -29,8 +31,22 @@ class Admin extends Controller
         $this->page->title = "Media View &mdash; ".SITE_NAME;
         // Main header.php in view/admin/header.php 
         $this->page->view('admin/header');
+        //Admin Navigation
+        $this->page->view('admin/nav');
         // Main index.php in view/admin/index.php 
         $this->page->view('admin/media');
     }
-
+    
+    // Pages Page Just View
+    public function pages()
+    {
+        // Title
+        $this->page->title = "Media View &mdash; ".SITE_NAME;
+        // Main header.php in view/admin/header.php 
+        $this->page->view('admin/header');
+        //Admin Navigation
+        $this->page->view('admin/nav');
+        // Main index.php in view/admin/index.php 
+        $this->page->view('admin/pages/index');
+    }
 }

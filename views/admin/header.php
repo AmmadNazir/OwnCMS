@@ -9,12 +9,12 @@
 
         <!-- CSS -->
         <link href="<?=SITE_URL?>assets/admin/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="<?=SITE_URL?>assets/admin/css/layout.css" rel="stylesheet"/>
+        <link href="<?=SITE_URL?>assets/admin/css/layout-one.css" rel="stylesheet"/>
     </head>
     <body>
         <div class="mcadminbar navbar-fixed-top">
             <div class="mclogo pull-left">
-                <a href="#" title="Mato CMS"><span class="glyphicon glyphicon-globe"></span></a>
+                <a href="#" title="Mato CMS"><span class="glyphicon glyphicon-globe"></span>Master P</a>
             </div><!-- /.maker-logo -->
             <!--        <div class="mc-visitsite">
                             <a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
@@ -28,8 +28,7 @@
                     <span class="glyphicon glyphicon-menu-down"></span>
                 </div>
             </div>
-
-            <div class="mcadminnavigation">
+<!--            <div class="mcadminnavigation">
                 <ul>
                     <li><a href="<?=SITE_URL_ADMIN?>">Dashboard</a></li>
                     <li><a href="<?=SITE_URL_ADMIN?>media">Media</a></li>
@@ -39,5 +38,6 @@
                     <li><a href="">Web Design</a></li>
                     <li><a href="">Users</a></li>
                 </ul>
-            </div><!-- /.mc-navigation -->
+            </div> /.mc-navigation -->
         </div><!-- /.header -->
+        
