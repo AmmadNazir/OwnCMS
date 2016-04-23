@@ -8,7 +8,7 @@
         <!-- CSS -->
         <link href="<?=SITE_URL?>public/assets/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="<?=SITE_URL?>public/assets/css/font-awesome.min.css" rel="stylesheet"/>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/dropzone/3.8.4/css/dropzone.css" rel="stylesheet"/>
+        <link href="<?=SITE_URL?>public/assets/css/dropzone.css" rel="stylesheet"/>
         <link href="<?=SITE_URL?>public/assets/css/admin.layout.css" rel="stylesheet"/>
     </head>
     <body>

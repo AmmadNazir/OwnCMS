@@ -1,9 +1,11 @@
-<div class="footer-cradit">
+
+</div><!-- .page-content-wrapper close -->
+<div class="footer-credit">
     Cradit Goes here
 </div>
-</div><!-- .page-content-wrapper close -->
 <script src="<?=SITE_URL?>public/assets/js/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/dropzone/3.8.4/dropzone.min.js"></script>
+<script src="<?=SITE_URL?>public/assets/js/bootstrap.min.js"></script>
+<script src="<?=SITE_URL?>public/assets/js/dropzone.min.js"></script>
 <script src="<?=SITE_URL?>public/assets/js/custom.js"></script>
 </body>
 </html>

@@ -43,11 +43,17 @@ class Admin extends Controller
 
     public function uploads()
     {
+        $year =  date("Y");
+        $month = date('m');
+        $mkdir = 'public/uploads/'.$year.'/'.$month.'/';
+        if (!file_exists($mkdir)) {
+            mkdir($mkdir, 0777, true);
+        }
         if($_FILES['file']['tmp_name']) {
             $upload = new Uploads();
             $upload->SetFileName($_FILES['file']['name']);
             $upload->SetTempName($_FILES['file']['tmp_name']);
-            $upload->SetUploadDirectory("public/uploads/"); //Upload directory, this should be writable
+            $upload->SetUploadDirectory("$mkdir"); //Upload directory, this should be writable
             $upload->SetValidExtensions(array('gif', 'jpg', 'jpeg', 'png')); //Extensions that are allowed if none are set all extensions will be allowed.
             //$upload->SetEmail("Sidewinder@codecall.net"); //If this is set, an email will be sent each time a file is uploaded.
             //$upload->SetIsImage(true); //If this is set to be true, you can make use of the MaximumWidth and MaximumHeight functions.
